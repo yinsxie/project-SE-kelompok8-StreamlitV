@@ -4,7 +4,7 @@ def main():
     st.set_page_config(page_title="Text Summarization and Speech", layout="wide")
 
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["Summarize Text", "Text to Speech", "Translate Paper", "Recommendation Paper", "Roadmap to make paper"])
+    page = st.sidebar.radio("Go to", ["Text to Speech", "Summarize Text", "Translate Paper", "Recommendation Paper", "Roadmap to make paper"])
 
     if page == "Text to Speech":
         import text_to_speech_page
