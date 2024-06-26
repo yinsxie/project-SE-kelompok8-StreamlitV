@@ -17,7 +17,7 @@ def main():
         translate_page.show_translate_page()
     elif page == "Recommendation Paper":
         import recommend_page
-        recommend_page.show_recomend_page()
+        recommend_page.show_recommend_page()
     elif page == "Roadmap to make paper":
         import roadmap_page
         roadmap_page.show_roadmap_page()
