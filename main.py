@@ -18,7 +18,7 @@ def main():
     elif page == "Recommendation Paper":
         import recommend_page
         recommend_page.show_recommend_page()
-    elif page == "Roadmap to make paper":
+    elif page == "Roadmap and Guidelines":
         import roadmap_page
         roadmap_page.show_roadmap_page()
 
