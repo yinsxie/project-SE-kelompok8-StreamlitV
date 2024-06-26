@@ -17,7 +17,10 @@ def text_to_speech(text, output_file):
     tts.save(output_file)
 
 def show_text_to_speech_page():
-    st.title("Text to Speech")
+    st.title("🗣️ Text-to-Speech (TTS)")
+    st.write("""
+    The Text-to-Speech (TTS) feature converts written text into spoken words. This tool is useful for creating audio versions of text documents, enhancing accessibility, and providing a convenient way to listen to content on the go.
+    """)
 
     # if "summary_text" not in st.session_state:
     #     st.session_state["summary_text"] = ""

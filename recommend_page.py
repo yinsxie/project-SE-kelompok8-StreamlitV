@@ -57,7 +57,10 @@ def recommend_papers(topic, df):
 
 def show_recommend_page():
     
-    st.header("Paper Recommendations Based on Topic")
+    st.title("📄 Recommend Paper")
+    st.write("""
+    The Recommend Paper feature suggests relevant academic papers based on a user's input topic. It leverages natural language processing techniques to find papers with similar topics, helping users discover related research and literature.
+    """)
     
     # Input topik dari user
     topic = st.text_input("Enter the topic of the paper you want to write:")

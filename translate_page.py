@@ -23,7 +23,10 @@ def translate_text(text, target_language):
 
 
 def show_translate_page():
-    st.title("Translate Paper")
+    st.title("🌐 Translate Paper")
+    st.write("""
+    The Translate Paper feature allows users to upload a PDF document and translate its content into another language. This tool is useful for making research accessible to a wider audience by breaking down language barriers.
+    """)
 
     if "pdf_text" not in st.session_state:
         st.session_state["pdf_text"] = ""
@@ -55,10 +58,10 @@ def show_translate_page():
     target_language = st.selectbox("Select target language: ", list(languages.keys()))
 
     # Tombol untuk mulai terjemahan
-    if st.button("Terjemahkan"):
+    if st.button("Translate"):
         # Terjemahkan teks
         st.session_state["translated_text"] = translate_text(st.session_state["pdf_text"], target_language)
         # Tampilkan hasil terjemahan
-        st.write("Hasil terjemahan:")
+        st.write("Translate Results: ")
         st.write(st.session_state["translated_text"])
     

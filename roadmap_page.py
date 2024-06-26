@@ -1,7 +1,11 @@
 import streamlit as st
 
 def show_roadmap_page():
-    st.title("Paper Writing Template/Roadmap Recommendations")
+    
+    st.title("🗺️ Roadmap Recommendations")
+    st.write("""
+    The Roadmap feature provides structured templates and guidelines for various types of academic writing, including thesis, research articles, and other scholarly documents. Users can choose a specific type and receive a detailed roadmap to aid their writing process.
+    """)
 
     # Pilihan jenis penulisan
     option = st.selectbox(

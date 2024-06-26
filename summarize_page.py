@@ -38,7 +38,12 @@ def text_to_speech(text, output_file):
     tts.save(output_file)
 
 def show_summarize_page():
-    st.title("Text Summarization")
+    st.title("📚 Text Summarization")
+    
+    st.write("""
+    Welcome to the text summarization tool! Upload a PDF document to get started.
+    The tool will extract text from the PDF, summarize it, and provide an option to convert the summary to speech.
+    """)
 
     # Define state variables for PDF upload and text conversion
     if "pdf_text" not in st.session_state:
